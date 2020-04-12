@@ -1,21 +1,45 @@
 class Point {
-	String id
-	double x,y;
+		String id;
+		double x,y;
+		//TODO add new variable
 
-	//TODO add new variable
+		//TODO constructor
+		public Point(String id,double x,double y) {
+			this.x=x;
+			this.y=y;
+			this.id=id;
+		}
+		//TODO setters and getters
+		public void setId(String id) {
+			this.id=id;
+		}
+		public void setX(double x) {
+			this.x=x;
+		}
+		public void setY(double y) {
+			this.y=y;
+		}
+		public double getX() {
+			return x;
+		}
+		public double getY() {
+			return y;
+		}
+		public String getId() {
+			return id;
+		}
 
-	//TODO constructor
+		public void move (char xDirection, char yDirection) {
+			//TODO
+			x = x+xDirection;
+			y = y+yDirection;
+		}
 
-	//TODO setters and getters
+		public void draw () {
+			//TODO
+			System.out.print("Tockata se naogja na: "+x+" "+y);
+		}
 
-	public void move (char xDirection, char yDirection) {
-		//TODO
+
+
 	}
-
-	public void draw () {
-		//TODO
-	}
-
-
-
-}
